@@ -1,5 +1,5 @@
 installAlacritty () {
-	sudo dnf install alacritty
+	sudo dnf install alacritty -y
 }
 
 
