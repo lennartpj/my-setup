@@ -9,7 +9,8 @@ setupAlacrittyConfig() {
         cp -r "${HOME}/.config/alacritty" "${HOME}/.config/alacritty-bak"
     fi
     mkdir -p "${HOME}/.config/alacritty/"
-    cp -r ./* "${HOME}/.config/alacritty/"
+    curl -sSLo "${HOME}/.config/alacritty/alacritty.toml" "https://github.com/lennartpj/my-setup/raw/main/alacritty/alacritty.toml"
+    curl -sSLo "${HOME}/.config/alacritty/nordic.toml" "https://github.com/lennartpj/my-setup/raw/main/alacritty/nordic.toml"
     printf "%b\n" "${GREEN}Alacritty configuration files copied.${RC}"
 }
 
